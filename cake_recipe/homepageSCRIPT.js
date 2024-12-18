@@ -17,3 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial check for visibility
     handleScroll();
   });
+
+  

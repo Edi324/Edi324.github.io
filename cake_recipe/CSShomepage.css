@@ -1,0 +1,90 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  /* Container Styling */
+  .homepage-container {
+    position: relative; /* Enables absolute positioning for children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  /* Title Styling */
+  .fade-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    position: absolute; /* Allows flexible positioning */
+    bottom: 400%; /* Position title at 20% of the container height */
+    left: 35%; /* Center horizontally */
+    transform: translate(-50%, 20px); /* Center and offset initially */
+  }
+  
+  /* Text Container Styling */
+  .fade-text-container {
+    font-size: 1.5rem;
+    color: #555;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    position: absolute; /* Allows flexible positioning */
+    bottom: 190%; /* Position text at 30% of the container height */
+    left: 35%; /* Center horizontally */
+    transform: translate(-50%, 20px); /* Center and offset initially */
+  }
+  
+  /* Visible Animation State */
+  .fade-title.visible,
+  .fade-text-container.visible {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Return to the centered position */
+  }
+  
+  /* Image Styling */
+  .image-container {
+    position: absolute; /* Position the image */
+    bottom: 10; /* Place image at the bottom */
+    left: 55%; /* Adjust image to be next to the text */
+    z-index: 1; /* Ensure the image is behind the text */
+    width: 500px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    transition: all 2s;
+    animation: swingCake 2s ease-in-out infinite;
+  }
+  
+/* Keyframes to rotate the image back and forth */
+@keyframes swingCake {
+    0% {
+      transform: rotate(-3deg); /* Start at -10 degrees */
+    }
+    50% {
+      transform: rotate(3deg); /* Rotate to +10 degrees at the halfway point */
+    }
+    100% {
+      transform: rotate(-3deg); /* Rotate back to -10 degrees */
+    }
+  }
+
+  
+  .image-container img {
+    width: 100%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+
+}
+  

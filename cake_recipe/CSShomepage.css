@@ -124,22 +124,23 @@ body::-webkit-scrollbar {
     display: none; /* Hide the checkbox */
   }
   
+  
   /* Button Styling */
   .steps-button {
     background-color: #f59d77;
     color: #ffffff;
     padding: 12px 24px;
     font-size: 20px;
-    position: fixed;
+    position: absolute;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-
     top: 55;
     left: 21%;
+    display: flex;
   }
   
   .steps-button .icon-container {
@@ -188,7 +189,7 @@ input[type="checkbox"] {
   label {
     display: inline-block;
     padding: 5px;
-    color: rgb(0, 0, 0);
+    color: rgb(190, 52, 52);
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
@@ -207,6 +208,7 @@ input[type="checkbox"] {
     transition: height 0.3s ease, opacity 0.3s ease, padding 0.3s ease; /* Smooth transition */
     margin-bottom: 80px;
     margin-top: 20px;
+    color: rgb(190, 52, 52);
   }
   
   /* When the checkbox is checked, the dropdown opens smoothly */

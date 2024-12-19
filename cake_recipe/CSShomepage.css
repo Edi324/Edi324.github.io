@@ -141,6 +141,7 @@ body::-webkit-scrollbar {
     top: 55;
     left: 21%;
     display: flex;
+    text-decoration: none; /* Removes underline from text */
   }
   
   .steps-button .icon-container {
@@ -229,3 +230,15 @@ input[type="checkbox"] {
     top: 53%;
     left: 22%;
   }
+
+  /* Simple fixed position for Impressum */
+  .impressum {
+    position: fixed;
+    bottom: 10px;
+    left: 7%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #8a312e;
+    padding: 5px;
+    border-radius: 3px;
+}

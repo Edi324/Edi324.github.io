@@ -1,0 +1,11 @@
+Pflicht (Muss enthalten sein):
+- Eine einfache Webseite mit einem Kochrezept nach Wahl
+- Kurze Einleitung, warum das Rezept empfehlenswert ist
+? Tabelle mit Zutaten, inkl. Dauer & Personenzahl
+- Nummerierte Liste mit den Kochschritten
+- Bilder zur Veranschaulichung
+- Links zu ähnlichen Rezepten auf externen Seiten
+
+Optional (Kann enthalten sein):
+➕ Inhaltsverzeichnis mit Anker-Links zu den Abschnitten
+ (für bessere Navigation)

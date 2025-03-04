@@ -1,0 +1,90 @@
+/* Reset margin and padding */
+body, html {
+    background-image: url('../img/backgroundMSI.png');
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-size: cover; /* Makes sure that the image covers the whole page */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.titlebar {
+    background-color: #411f2a;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    
+}
+
+.titlebar a {
+    color: #dc6d7c;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: normal; /* Ensure text is not bold */
+}
+
+/* Prevent content from hiding under fixed nav */
+body {
+    padding-top: 60px;
+}
+
+
+/* Album Grid Container */
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* makes 4 columns that take 1 equal fraction from the container*/
+    column-gap: 60px; /* Increase horizontal spacing between columns */
+    row-gap: 50px; /* Keep vertical spacing between rows */
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto; /* Center the grid */
+}
+
+
+/* Album Box Styling */
+.album {
+    background-color: #221618bb;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.album h4 {
+    font-size: 20px; /* Adjust this value for header text size */
+    margin: 10px 0; /* Optional: Add spacing around the header */
+}
+
+.album h4 a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent (h4) */
+}
+
+.album h4 a:hover {
+    color: rgb(241, 121, 157); /* Change color on hover (optional) */
+}
+
+.album p {
+    font-size: 14px; /* Adjust this value for normal text size */
+    margin: 5px 0; /* Optional: Add spacing around the text */
+    color: #9d4964;
+}
+
+/* Album Images */
+.album img {
+     /* Makes images responsive */
+    max-height: 200px;
+    object-fit: cover; /* Ensures the image fills the box */
+    border-radius: 5px;
+}

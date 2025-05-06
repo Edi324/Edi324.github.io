@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Library - Book Collection</title>
+  <link rel="stylesheet" href="../css/library.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav style="text-align: left;">
+    <a href="homepage.html">Home</a>
+    <a href="library.html">Library</a>
+    <div class="nav-filters">
+      <input type="text" id="search" placeholder="Search books..." />
+      <select id="genre-filter">
+        <option value="">All Genres</option>
+        <option value="dystopian">Dystopian</option>
+        <option value="classic">Classic</option>
+        <option value="romance">Romance</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="biography">Biography</option>
+        <option value="history">History</option>
+        <option value="memoir">Memoir</option>
+        <option value="thriller">Thriller</option>
+        <option value="mystery">Mystery</option>
+        <option value="philosophical">Philosophical</option>
+        <option value="contemporary">Contemporary</option>
+
+      </select>
+    </div>
+    <div class="nav-logo">
+        <img src="../images/kitty.png" alt="Site Logo" id="logoClick">
+      </div>
+  </nav>
+
+  <!-- Library Header -->
+  <section class="library-header">
+    <h1>Our Book Collection</h1>
+    <p>Browse through our extensive collection of books. Click on any book to learn more.</p>
+  
+    <!-- Scrolling Quotes Banner -->
+    <div class="library-quote-marquee">
+      <span>
+        “War is peace. Freedom is slavery. Ignorance is strength.” – George Orwell &nbsp;&nbsp;&nbsp;&nbsp;
+        “A reader lives a thousand lives before he dies.” – George R.R. Martin &nbsp;&nbsp;&nbsp;&nbsp;
+        “You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven.” – Yuval Noah Harari &nbsp;&nbsp;&nbsp;&nbsp;
+        “Sometimes it's only in silence that we can truly hear.” – Alex Michaelides &nbsp;&nbsp;&nbsp;&nbsp;
+        “The mystery of life isn't a problem to solve, but a reality to experience.” – Frank Herbert
+      </span>
+    </div>
+  </section>
+  
+
+ <!-- Book Library -->
+<section class="book-library">
+    <div class="book-grid">
+        <!-- Book 1 -->
+        <a href="https://archive.org/details/GeorgeOrwells1984" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/1984.png" alt="1984" />
+          </div>
+          <div class="book-info">
+            <h3>1984</h3>
+            <p class="author">George Orwell</p>
+            <p class="genre">Dystopian</p>
+          </div>
+        </a>
+      
+        <!-- Book 2 -->
+        <a href="https://www.gutenberg.org/ebooks/64317" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/gatsby.png" alt="The Great Gatsby" />
+          </div>
+          <div class="book-info">
+            <h3>The Great Gatsby</h3>
+            <p class="author">F. Scott Fitzgerald</p>
+            <p class="genre">Classic</p>
+          </div>
+        </a>
+      
+        <!-- Book 3 -->
+        <a href="https://www.gutenberg.org/ebooks/1342" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/pride.png" alt="Pride and Prejudice" />
+          </div>
+          <div class="book-info">
+            <h3>Pride and Prejudice</h3>
+            <p class="author">Jane Austen</p>
+            <p class="genre">Romance</p>
+          </div>
+        </a>
+      
+        <!-- Book 4 -->
+        <a href="https://archive.org/details/hobbit_202201" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/hobbit.png" alt="The Hobbit" />
+          </div>
+          <div class="book-info">
+            <h3>The Hobbit</h3>
+            <p class="author">J.R.R. Tolkien</p>
+            <p class="genre">Fantasy</p>
+          </div>
+        </a>
+      
+        <!-- Book 5 -->
+        <a href="https://www.amazon.com/Becoming-Michelle-Obama/dp/1524763136" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/becoming.png" alt="Becoming" />
+          </div>
+          <div class="book-info">
+            <h3>Becoming</h3>
+            <p class="author">Michelle Obama</p>
+            <p class="genre">Biography</p>
+          </div>
+        </a>
+      
+        <!-- Book 6 -->
+        <a href="https://archive.org/details/sapiens_202112" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/sapiens.png" alt="Sapiens" />
+          </div>
+          <div class="book-info">
+            <h3>Sapiens</h3>
+            <p class="author">Yuval Noah Harari</p>
+            <p class="genre">History</p>
+          </div>
+        </a>
+      
+        <!-- Book 7 -->
+        <a href="https://archive.org/details/westover-tara-educated-2018-random-house-publishing-group" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/educated.png" alt="Educated" />
+          </div>
+          <div class="book-info">
+            <h3>Educated</h3>
+            <p class="author">Tara Westover</p>
+            <p class="genre">Memoir</p>
+          </div>
+        </a>
+      
+        <!-- Book 8 -->
+        <a href="https://novel122.com/246411-the-silent-patient.html" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/patient.png" alt="The Silent Patient" />
+          </div>
+          <div class="book-info">
+            <h3>The Silent Patient</h3>
+            <p class="author">Alex Michaelides</p>
+            <p class="genre">Thriller</p>
+          </div>
+        </a>
+      
+        <!-- Book 9 -->
+        <a href="https://archive.org/details/wherethecrawdadssing" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/crawdads.png" alt="Where the Crawdads Sing" />
+          </div>
+          <div class="book-info">
+            <h3>Where the Crawdads Sing</h3>
+            <p class="author">Delia Owens</p>
+            <p class="genre">Mystery</p>
+          </div>
+        </a>
+      
+        <!-- Book 10 -->
+        <a href="https://archive.org/details/alchemist0000coel" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/alchemist.png" alt="The Alchemist" />
+          </div>
+          <div class="book-info">
+            <h3>The Alchemist</h3>
+            <p class="author">Paulo Coelho</p>
+            <p class="genre">Philosophical</p>
+          </div>
+        </a>
+      
+        <!-- Book 11 -->
+        <a href="https://archive.org/details/dune00herb" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/dune.png" alt="Dune" />
+          </div>
+          <div class="book-info">
+            <h3>Dune</h3>
+            <p class="author">Frank Herbert</p>
+            <p class="genre">Science Fiction</p>
+          </div>
+        </a>
+      
+        <!-- Book 12 -->
+        <a href="https://thefreebooksonline2.com/romance/Normal_People/" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/people.png" alt="Normal People" />
+          </div>
+          <div class="book-info">
+            <h3>Normal People</h3>
+            <p class="author">Sally Rooney</p>
+            <p class="genre">Contemporary</p>
+          </div>
+        </a>
+     </div>
+      
+      
+  
+      <!-- end of library -->
+    </div>
+</section>
+  
+
+
+<div class="background-bubbles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+
+
+  <footer class="site-footer">
+    <p>Website created by Edi324 for the frontend final project</p>
+  </footer>
+
+  <script src="../javaScript/library.js"></script>
+</body>
+</html>

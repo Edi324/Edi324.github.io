@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Digital Library</title>
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="library.html">Library</a>
+        </div>
+        <div class="nav-logo">
+          <img src="../images/kitty.png" alt="Site Logo" id="logoClick">
+        </div>
+      </nav>
+
+    <!-- Intro -->
+    <section class="intro">
+        <h1>Welcome to the Digital Library</h1>
+        <p>
+            Welcome to our digital library, where knowledge meets convenience. 
+            Our library offers a vast collection of books, journals, and articles 
+            across various genres and disciplines. Whether you're a student, researcher, 
+            or simply a book lover, you'll find something to spark your curiosity. 
+            Dive into our featured collection below and start your journey today!
+        </p>
+    </section>
+
+
+    <!-- Featured Books -->
+    <section class="featured-books">
+    <h2 class="featured-title">Featured Books</h2>
+    <div class="book-list">
+        <!-- Featured Book 1 -->
+        <a href="https://archive.org/details/GeorgeOrwells1984" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/1984.png" alt="1984 Cover">
+          </div>
+          <div class="book-info">
+            <h3>1984</h3>
+            <p class="author">George Orwell</p>
+            <p class="genre">Dystopian</p>
+          </div>
+
+            <!-- Scrolling Quote Banner -->
+        <div class="book-quote-marquee">
+            <span>
+                “War is peace. Freedom is slavery. Ignorance is strength.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “Big Brother is Watching You.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “If you want a picture of the future, imagine a boot stamping on a human face- forever.” &nbsp;&nbsp;&nbsp;&nbsp;
+
+                “War is peace. Freedom is slavery. Ignorance is strength.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “Big Brother is Watching You.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “If you want a picture of the future, imagine a boot stamping on a human face- forever.”
+                
+              </span>
+        </div>
+        </a>
+      
+        <!-- Featured Book 2 -->
+        <a href="https://archive.org/details/sapiens_202112" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/sapiens.png" alt="Sapiens Cover">
+          </div>
+          <div class="book-info">
+            <h3>Sapiens</h3>
+            <p class="author">Yuval Noah Harari</p>
+            <p class="genre">History</p>
+          </div>
+
+          <div class="book-quote-marquee">
+            <span>
+                “History began when humans invented gods, and will end when humans become gods.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “Culture tends to argue that it forbids only that which is unnatural.” &nbsp;&nbsp;&nbsp;&nbsp;
+
+                “History began when humans invented gods, and will end when humans become gods.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “Culture tends to argue that it forbids only that which is unnatural.”
+                
+              </span>
+        </div>
+        </a>
+      
+        <!-- Featured Book 3 -->
+        <a href="https://novel122.com/246411-the-silent-patient.html" target="_blank" class="book-card">
+          <div class="book-cover">
+            <img src="../images/patient.png" alt="The Silent Patient Cover">
+          </div>
+          <div class="book-info">
+            <h3>The Silent Patient</h3>
+            <p class="author">Alex Michaelides</p>
+            <p class="genre">Thriller</p>
+          </div>
+
+          <div class="book-quote-marquee">
+            <span>
+                “We’re all crazy, I believe, just in different ways.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “Alicia Berenson was thirty-three years old when she killed her husband.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “Sometimes it's only in silence that we can truly hear.” &nbsp;&nbsp;&nbsp;&nbsp;
+
+                “We’re all crazy, I believe, just in different ways.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “Alicia Berenson was thirty-three years old when she killed her husband.” &nbsp;&nbsp;&nbsp;&nbsp;
+                “Sometimes it's only in silence that we can truly hear.”
+
+              </span>
+        </div>
+        </a>
+      </div>
+      
+
+    </section>
+
+
+
+    <section class="suggest-book">
+        <h2>Suggest a Book to add to the library</h2>
+        <form action="https://formsubmit.co/sylejmaniediona@gmail.com" method="POST">
+          <label for="email">Your Email:</label>
+          <input type="email" name="email" id="email" required placeholder="you@example.com" />
+      
+          <label for="title">Book Title:</label>
+          <input type="text" name="title" id="title" required placeholder="e.g. The Name of the Wind" />
+      
+          <label for="author">Author:</label>
+          <input type="text" name="author" id="author" required placeholder="e.g. Patrick Rothfuss" />
+      
+          <label for="link">Optional Link (e.g. Amazon or free reading site):</label>
+          <input type="url" name="link" id="link" placeholder="https://..." />
+      
+          <button type="submit">Submit Suggestion</button>
+        </form>
+      </section>
+      
+
+
+
+      <footer class="site-footer">
+        <p>Website created by Edi324 for the frontend final project</p>
+      </footer>
+
+      <script src="../javaScript/homepage.js"></script>
+</body>
+</html>

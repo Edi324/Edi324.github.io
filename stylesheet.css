@@ -12,7 +12,8 @@ body, html {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url('shadowmilk.png');
+    /*background-image: url('shadowmilk.png');*/
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(20%);

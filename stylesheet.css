@@ -22,7 +22,7 @@ body, html {
 /* Center the content container and align text to the left */
 .content {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the container */
     z-index: 1;
